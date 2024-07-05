@@ -20,7 +20,6 @@ message RegisterRequest {
 
 message RegisterResponse {
     uint64 id = 1;
-    string error = 2;
 }
 
 message LoginRequest {
@@ -31,7 +30,6 @@ message LoginRequest {
 message LoginResponse {
     string access_token = 1;
     string refresh_token = 2;
-    string error = 3;
 }
 
 message LogoutRequest {
@@ -40,7 +38,6 @@ message LogoutRequest {
 
 message LogoutResponse {
     bool success = 1;
-    string error = 2;
 }
 
 message RefreshTokenRequest {
@@ -50,7 +47,6 @@ message RefreshTokenRequest {
 message RefreshTokenResponse {
     string access_token = 1;
     string refresh_token = 2;
-    string error = 3;
 }
 
 message ValidateTokenRequest {
@@ -59,5 +55,4 @@ message ValidateTokenRequest {
 
 message ValidateTokenResponse {
     bool valid = 1;
-    string error = 2;
 }
